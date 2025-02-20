@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <h1> NOVA PÁGINA HTML5</h1>
+    <p> O QUE FAZEMOS?</p>
+    <h1> ATIVIDADES DO AGRO</h1>
+    <h2> ATIVIDADES DA INDÚSTRIA</h2>
+    <h3> ATIVIDADES DE TRANSPORTES</h3>
+    
+    <img src="C:\Users\rogerio.3767.ALUNO\Downloads\sunny-meadow-landscape.jpg" alt="W3Schools.com" width="104" height="142">
+    
+    <head>
+        <style>
+            .minha-imagem {
+                width: 300px;
+                height: 200px;
+            }
+     
+        </style>
+        </head>
+
+
+    <h1 id="titulo-principal">O mundo do Agro
+    
+    </h1>
+   
+    <button onclick="mudarTexto()">Mudar Texto</button>
+
+    <script>
+        function mudarTexto() {
+            document.getElementById('titulo-principal').innerText = 'O Agro e suas facetas';
+            document.getElementById('paragrafo-principal').innerText = 'Tendências Agrobusiness';
+        }
+    </script>
+    <title>--Formulário Contato--</title>
+    <meta charset="utf-8" />
+    <!--   <link href="ContatoEstilo.css" rel="stylesheet" media="all" />
+        <script src="JavaScript1.js"></script>-->
+<br/>
+<br/>
+<br/>
+        <form>
+            <input type="text">
+            <button type="submit">Enviar</button>
+        </form>
+        <br/>
+        <br/>
+
+    <form name="meu_form">
+    
+      <h1>Entre em contato</h1>
+    
+      <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
+      <label for="nome">Nome</label>
+    
+      <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+      <label for="fone">Fone</label>
+    
+      <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+      <label for="email">Email</label>
+    
+      <textarea placeholder="Deixe sua opnião"></textarea>
+    
+      <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+    </form>
+
+<br/>
+<br/>
+<br/>
+
+<h1>Lista de Tarefa</h1>
+
+    <input type="text" id="text" class="text" placeholder="Tarefa">
+
+    <ul id="lista" class="lista"> </ul>
+
+    <button onclick="adicionar()" id="adicionar">ADICIONAR</button>
+
+    <script>
+        function adicionar()
+{
+    let text = document.getElementById('text').value;
+    let list = document.getElementById('lista').innerHTML;
+
+    list += `<li> ${text}</li>`
+    document.getElementById('lista').innerHTML = list;
+}
+
+    </script>
+
+    <a href="https://agriq.com.br">This is a link</a>
+
+</body>
+</html>
